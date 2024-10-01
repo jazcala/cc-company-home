@@ -1,0 +1,177 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+  text-align: center;
+  margin: 10px auto 50px;
+}
+
+h3 {
+  text-align: center;
+}
+
+section:not(:first-of-type) {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 3px dotted darkolivegreen;
+  padding: 70px 0;
+}
+
+/* header */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: tomato;
+}
+#title {
+  margin:  10px 0 5px;
+}
+
+#title span {
+  display: inline;
+  visibility: hidden;
+  margin-left: -100px;
+}
+
+nav {
+  align-content: center;
+  background-color: white;
+  align-self: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+nav a {
+  padding: 20px 5px;
+  font-weight: bold;
+}
+
+nav a:link,
+nav a:active,
+nav a:visited {
+  color: tomato;
+}
+
+/* hero */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(31, 106, 49, 0.5)), url("./images/store-land.png");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+#hero p {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+/* products */
+
+#products .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#products article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  border: 1px rgb(198, 195, 195) solid;
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+
+#products article h3 {
+  margin: 10px;
+}
+
+#products .price {
+  align-self: flex-end;
+}
+
+#products button {
+  color: white;
+  font-weight: bold;
+  background-color: tomato;
+  border: 1px tomato solid;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+#products article img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Out Team */
+
+#team .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#team article img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* Contact */
+
+#contact {
+  border: none;
+}
+
+#contact .content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact .content i {
+  color: tomato;
+}
+
+#contact img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: tomato;
+  height: 50px;
+}
+
+footer a:link,
+footer a:active,
+footer a:visited {
+  color: white;
+}
