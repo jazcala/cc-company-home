@@ -11,13 +11,18 @@
 </head>
 <body>
   <header>
-      <a href="#"><img src="./images/logo.png" alt="Organic logo"></a>
-    <nav>
+    <div id="main-nav">
+    <a href="#" class="logo"><img src="./images/logo.png" alt="Organic logo"></a>
+    <a id="hamb-icon" href="javascript:void(0);"  class="icon" onclick="onClickHamb()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    <nav id="myLinks">
       <a href="#products">Products</a>
       <a href="#about-us">About Us</a>
       <a href="#team">Our Team</a>
       <a href="#contact">Contact</a>
-      <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      <a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
     </nav>
   </header>
   <main>
@@ -119,5 +124,6 @@
   <footer>
     <p><a href="#">@jazcala</a> - 2024</p>
   </footer>
+  <script src="./scripts.js"></script>
 </body>
 </html>
