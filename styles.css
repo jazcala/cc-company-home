@@ -3,11 +3,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-size: 30px;
 }
 
 h2 {
   font-family: "Sixtyfour Convergence", sans-serif;
-  font-optical-sizing: auto;
   font-size: 5.5rem;
   font-weight: 400;
   font-style: normal;
@@ -30,6 +30,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 section:not(:first-of-type) {
   width: 90%;
   margin: 0 auto;
@@ -41,36 +45,54 @@ section:not(:first-of-type) {
 header {
   position: sticky;
   top: 0;
-  display: inline-flex;
-  justify-content: space-between;
   background-color: tomato;
 }
 
+header a.logo {
+  display: flex;
+}
+
 header img {
+  align-self: center;
+  justify-content: flex-start;
   width: 60%;
   height: auto;
 }
 
-#title {
-  margin: 0.625rem 0 0.312rem;
+#main-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-#title {
-  visibility: hidden;
+#hamb-icon:link,
+#hamb-icon:active,
+#hamb-icon:visited {
+  color: white;
+}
+
+#hamb-icon i {
+  align-self: center;
+  color: white;
+  background-color: tomato;
+  font-size: 2.5rem;
+  padding: 1rem;
 }
 
 nav {
-  align-content: center;
+  overflow: hidden;
+  position: relative;
+  display: none;
+  width: 100%;
+  text-align: center;
   background-color: white;
-  align-self: center;
-  padding: 0.625rem;
-  border-radius: 0.312rem;
-  margin-right: 0.937rem;
 }
 
 nav a {
-  padding: 1.25rem 0.312rem;
-  font-weight: bold;
+  color: tomato;
+  padding: 14px 16px;
+  font-size: 2.5rem;
+  display: block;
+  border-bottom: 1px dotted tomato;
 }
 
 nav a:link,
@@ -93,6 +115,10 @@ nav a:visited {
   margin-top: -5.7rem;
 }
 
+#title {
+  margin: 0.625rem 0 0.312rem;
+  visibility: hidden;
+}
 
 #hero p {
   display: inline-block;
@@ -117,7 +143,7 @@ nav a:visited {
   margin: 1.25rem;
   border: 0.12rem rgb(198, 195, 195) solid;
   border-radius: 0.5rem;
-
+  min-width: 11rem;
   padding: 3% 2%;
 }
 
@@ -184,6 +210,10 @@ nav a:visited {
   width: 40%;
 }
 
+#contact .social a {
+  color: black;
+}
+
 #contact .content i {
   color: tomato;
 }
@@ -210,12 +240,8 @@ footer a:visited {
 
 @media only screen and (max-device-width:480px) {
 
-  body {
-    font-size: 30px;
-  }
-
-  #hero {
-    height: 40rem;
+  #myLinks {
+    border-bottom: 5px tomato solid;
   }
 
   #hero p {
@@ -231,20 +257,59 @@ footer a:visited {
 @media only screen and (min-device-width: 481px) and (max-device-width:768px) {
 
   body {
-    background-color: lightgoldenrodyellow;
     font-size: 24px;
   }
 
+
+}
+
+@media only screen and (min-device-width: 481px) {
+
+  /* header */
+  header {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  /* Nav */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    align-self: center;
+    border-radius: 0.312rem;
+    margin-right: 0.937rem;
+    width: 50%;
+  }
+
+  nav a {
+    padding: 1.25rem 0.312rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+  }
+
+  nav a:link,
+  nav a:active,
+  nav a:visited {
+    color: tomato;
+  }
+
+  #hamb-icon {
+    display: none;
+  }
 }
 
 @media only screen and (min-device-width:769px) {
 
-  body {
-    background-color: pink;
+  h3 {
+    font-size: 2rem;
   }
 
-  h3 {
-    font-size: 2.5rem;
+  #products article {
+    max-width: 20%;
   }
 
   #products article img {
